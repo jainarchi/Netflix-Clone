@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    height: 94vh;
+
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/058eee37-6c24-403a-95bd-7d85d3260ae1/e10ba8a6-b96a-4308-bee4-76fab1ebd6ca/IN-en-20240422-POP_SIGNUP_TWO_WEEKS-perspective_WEB_db9348f2-4d68-4934-b495-6d9d1be5917e_small.jpg");
+
+    background-position: center center;
+    position: relative;
+
+}
+
+/*   box div is layer on .main    .main has two part nav and .hero */
+.main .box {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #000;
+    opacity: 0.55;
+
+
+}
+
+.main nav {
+    width: 78vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+nav img {
+    z-index: 10;
+    position: relative;
+}
+
+.btn {
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
+
+.lang {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px 17px;
+    border: 1px solid rgb(195, 193, 193);
+    background-color: rgba(90, 82, 82, 0.147);
+    display: flex;
+    gap: 4px;
+
+}
+
+nav .btn2 {
+    font-size: 14px;
+    font-weight: 500;
+    background-color: red;
+    padding: 5px 12px;
+
+
+}
+
+nav .navbtns {
+    display: flex;
+    gap: 22px;
+    padding: 4px;
+}
+
+
+input {
+    border-radius: 4px;
+    padding: 0px 229px 0px 10px;
+    border-color: gray;
+    background-color: rgba(159, 152, 152, 0.223);
+
+}
+
+.startbtn {
+    font-size: 24px;
+    font-weight: 500;
+    background-color: red;
+    padding: 12px 25px;
+}
+
+.redbtn:hover {
+    background-color: #c11119;
+}
+
+.flex {
+    display: flex;
+    gap: 7px;
+}
+
+
+.hero {
+    width: 80vw;
+    margin: auto;
+    height: calc(100% - 76px);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 23px;
+    position: relative;
+    z-index: 10;
+
+    font-family: sans-serif;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+
+.separate {
+    height: 7px;
+    background-color: rgba(128, 128, 128, 0.304);
+}
+
+
+.parts {
+    /* border: 2px solid white; */
+    height: 75vh;
+}
+
+.boxes {
+    /* border: 1px solid red; */
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+    color: white;
+    display: flex;
+    font-family: sans-serif;
+}
+
+.b1,
+.b2 {
+    /* border: 1px solid goldenrod; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.parts .boxes h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.parts .boxes p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.boxes img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+/* boxes div figure 2nd img */
+.boxes div figure :nth-child(2) {
+    width: 5vw;
+    position: absolute;
+    left: 94px;
+    bottom: 0px;
+
+}
+
+figure {
+    /* border: 1px solid red; */
+    position: absolute;
+
+}
+
+.boxes video {
+    width: 30vw;
+    position: absolute;
+
+}
+
+.faq {
+    color: white;
+    font-family: sans-serif;
+}
+
+.faq h2 {
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding: 23px 0px;
+}
+
+.faqboxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faqbox {
+    width: 70vw;
+    margin: auto;
+    background-color: #2d2d2d;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.faqbox:hover {
+    transition: all 0.5s ease-out;
+    background-color: #414141;
+}
+
+.footeremail {
+    padding: 83px 0px;
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footeremail span {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/*   footer start */
+footer {
+    padding: 100px;
+    display: grid;
+    align-content: center;
+    font-family: sans-serif;
+}
+
+footer .footeritems {
+    padding: 25px 0px;
+}
+
+footer .footeritems ul {
+
+    list-style-type: none;
+    display: grid;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 12px;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+
+}
+
+footer a,
+footer p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer p {
+    padding: 10px 0px;
+}
+
+
+@media only screen and (max-width:700px) {
+
+    .btn {
+        font-size: small;
+    }
+
+    .hero .flex,
+    .footeremail .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .flex input {
+        height: 40px;
+    }
+
+    .hero span {
+        font-size: 34px;
+    }
+
+    h1 {
+        font-size: 10px;
+    }
+
+    .parts .boxes {
+        flex-direction: column;
+
+    }
+
+    .b1,
+    .b2 {
+        /* border: 1px solid goldenrod; */
+        height: 100%;
+        width: 94%;
+        margin: auto;
+
+    }
+
+    .boxes .b1 h1,
+    .boxes .b2 h1,
+    .faq h2 {
+        font-weight: 600;
+        font-size: 34px;
+
+    }
+
+    .hero>:first-child {
+        font-size: 34px;
+        font-weight: 600;
+    }
+
+    .boxes .b1 p,
+    .boxes .b2 p {
+        font-size: 23px;
+
+    }
+
+    nav span img {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    footer .footeritems ul {
+
+        /* background-color: beige; */
+        grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+        padding: 0px 180px 0px 10px;
+    }
+
+
+}
