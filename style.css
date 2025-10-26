@@ -68,6 +68,7 @@ nav .btn2 {
     font-weight: 500;
     background-color: red;
     padding: 5px 12px;
+    min-width: fit-content;
 
 
 }
